@@ -1,7 +1,15 @@
 <template>
   <div>
     <div v-if="!isOpen(key)">
-      <img class="productImage" :src="posterImage" :alt="item.name" />
+       <div
+        class="productImage"
+        
+        :style="{
+          backgroundImage: 'url(' + productImage + ')',
+          backgroundSize: 'cover',
+        }"
+
+      ></div>
       <div class="itemname">
         <a @click="toggleModal(key)" class="name shadow-lg">{{ item.name }}</a>
       </div>
@@ -29,8 +37,8 @@
 export default {
   props: ["item"],
   computed: {
-    posterImage: function () {
-      return `url(${this.item.image})`;
+    productImage: function () {
+      return `${this.item.image}`;
     },
     detailImage: function () {
       return `${this.item.image2}`;
@@ -106,6 +114,7 @@ export default {
   cursor: pointer;
 }
 .productImage {
+  min-height: 10rem;
   max-width: 100%;
 }
 .closebutton{

@@ -42,7 +42,7 @@ export default {
     return {
       name: 'Evan You',
       company: 'Vue',
-      review: 'I would like to get price offer for 1000 cheesecakes by 2nd Feb 2021. Thanks',
+      review: 'I would like to get price offer for 1000 Gundel Pancakes by 2nd Feb 2021. Thanks',
       rating: 5
     }
   },
