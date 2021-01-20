@@ -18,7 +18,7 @@
                     "name": "Food & Drink"
                 },
                 "image": "../assets/images/paprcsirke2.png",
-                "image2": "./paprcsirke.jpg",
+                "image2": "../assets/images/paprcsirke.jpg",
                
                 "num": "0",
                 "overrideDuration": "+10 year",
@@ -43,8 +43,8 @@
                 "type": {
                     "name": "Food & Drink"
                 },
-                "image": "./pogi2.png",
-                "image2": "./pogi.jpg",
+                "image": "../assets/images/pogi2.png",
+                "image2": "../assets/images/pogi.jpg",
                 
                 "num": "1",
                 "overrideDuration": "+10 year",
@@ -69,8 +69,8 @@
                 "type": {
                     "name": "Food & Drink"
                 },
-                "image": "./paprkummi2.png",
-                "image2": "./paprkummi.jpg",
+                "image": "../assets/images/paprkummi2.png",
+                "image2": "../assets/images/paprkummi.jpg",
               
                 "num": "2",
                 "overrideDuration": "+10 year",
@@ -95,8 +95,8 @@
                 "type": {
                     "name": "Food & Drink"
                 },
-                "image": "./marha2.png",
-                "image2": "./marhahusleves.jpg",
+                "image": "../assets/images/marha2.png",
+                "image2": "../assets/images/marhahusleves.jpg",
                
                 "num": "3",
                 "overrideDuration": "+10 year",
@@ -121,8 +121,8 @@
                 "type": {
                     "name": "Food & Drink"
                 },
-                "image": "./gundel2.png",
-                "image2": "./gundel.jpg",
+                "image": "../assets/images/gundel2.png",
+                "image2": "../assets/images/gundel.jpg",
                
                 "num": "4",
                 "overrideDuration": "+10 year",
@@ -147,8 +147,8 @@
                 "type": {
                     "name": "Food & Drink"
                 },
-                "image": "./lencse2.png",
-                "image2": "./lencsefozi.jpg",
+                "image": "../assets/images/lencse2.png",
+                "image2": "../assets/images/lencsefozi.jpg",
                
                 "num": "5",
                 "overrideDuration": "+10 year",
