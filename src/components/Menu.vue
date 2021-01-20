@@ -69,27 +69,48 @@ export default {
 .image {
   width: 100%;
 }
-.detailContainer{
-   background-color:#a1dac9;
- min-height:10rem;
+.detailContainer {
+  display:grid;
+  min-height: 10rem;
 }
 .priceContainer {
-  background:   url('../assets/images/tag.png') no-repeat left;
+  background: url("../assets/images/tag.png") no-repeat left;
   background-size: 40%;
-   min-height:5rem;
-   text-align:left;
-   font-size:1rem;
-   text-indent:4rem;
+  min-height: 5rem;
+  text-align: left;
+  font-size: 1rem;
+  text-indent: 3.2rem;
 }
-.price{
-  padding-top: 1.5rem;
+.price {
+  padding-top: 1.8rem;
+  color:black;
+  font-size:0.8rem;
 }
 .details {
-  background-color:rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 1rem;
   list-style-type: none;
-  font-family: Monotype;
-  font-weight: 300;
-  color:black;
+  font-family: "Xanh Mono", sans-serif;
+
+  font-weight: 800;
+  color: black;
+}
+.name {
+  color: #a1dac9;
+  cursor: pointer;
+}
+.name:hover {
+  color: black;
+  cursor: pointer;
+}
+.productImage {
+  max-width: 100%;
+}
+.closebutton{
+  color:white;
+  background:#288267;
+}
+.overlay{
+  background: rgb(161 218 201);
 }
 </style>
