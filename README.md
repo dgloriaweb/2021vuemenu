@@ -1,4 +1,4 @@
-# beavermenu
+# 2021vuemenu
 
 ## Project setup
 ```
@@ -22,6 +22,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-"# VueJs3course" 
-# beavermenu
+
+# 2021vuemenu
 "# 2021vuemenu" 
