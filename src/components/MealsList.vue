@@ -19,6 +19,7 @@
   </div>
 </template>
 
+
 <script>
 import Menu from "./Menu.vue";
 import ReviewForm from "./ReviewForm.vue";
@@ -52,7 +53,7 @@ export default {
 
 <style  scoped>
 .hero {
-  font-size: 10rem;
+  font-size: 8rem;
   font-family: "Xanh Mono", sans-serif;
   color: rgb(161 218 201);
 }

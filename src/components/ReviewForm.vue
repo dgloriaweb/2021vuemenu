@@ -69,5 +69,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style  scoped>
+
+input, textarea {
+  border: .1rem dotted grey;
+}
+h3{
+  font-weight: 800;
+}
 </style>

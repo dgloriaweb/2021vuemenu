@@ -1,11 +1,15 @@
 <template>
   <div>
-    <img :src="posterImage" :alt="item.name" />
-    <div class="itemname">
-      <a @click="toggleExpansion(key)" >{{ item.name }}</a>
+    <div v-if="!isOpen(key)">
+      <img class="productImage" :src="posterImage" :alt="item.name" />
+      <div class="itemname">
+        <a @click="toggleModal(key)" class="name shadow-lg">{{ item.name }}</a>
+      </div>
+    </div>
+    <div v-else class="overlay ">
       <div
         class="detailContainer"
-        v-show="isExpanded(key)"
+        v-show="isOpen(key)"
         :style="{
           backgroundImage: 'url(' + detailImage + ')',
           backgroundSize: 'cover',
@@ -13,11 +17,9 @@
       >
         <div class="details">{{ item.details }}</div>
         <div class="priceContainer">
-          <div class="price">
-
-           £ {{ item.prices.price.price }}</div>
-          </div>
-        <!-- <div class="details" :style="{backgroundImage:'url('+priceImage+')',backgroundSize: 'cover'}">{{ item.prices.price.price }}</div> -->
+          <div class="price">£ {{ item.prices.price.price }}</div>
+        </div>
+        <button class="closebutton" @click="toggleModal(key)">Close</button>
       </div>
     </div>
   </div>
@@ -33,30 +35,30 @@ export default {
     detailImage: function () {
       return `${this.item.image2}`;
     },
-    
+
     itemPath: function () {
       return `/meals/${this.item.id}`;
     }
   },
   data() {
     return {
-      key:0,
-      //isExpanded: false,
-      expandedGroup: [],
-      name:''
+      key: 0,
+      //isOpen: false,
+      modalGroup: [],
+      name: ''
     }
   },
   methods: {
-    isExpanded(key) {
-      return this.expandedGroup.indexOf(key) !== -1;
+    isOpen(key) {
+      return this.modalGroup.indexOf(key) !== -1;
     },
-    toggleExpansion(key) {
-      if (this.isExpanded(key))
-        this.expandedGroup.splice(this.expandedGroup.indexOf(key), 1);
+    toggleModal(key) {
+      if (this.isOpen(key))
+        this.modalGroup.splice(this.modalGroup.indexOf(key), 1);
       else
-        this.expandedGroup.push(key);
+        this.modalGroup.push(key);
     },
-     
+
   }
 }
 </script>
@@ -113,4 +115,6 @@ export default {
 .overlay{
   background: rgb(161 218 201);
 }
+
+
 </style>
