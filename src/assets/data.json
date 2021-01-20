@@ -17,7 +17,7 @@
                 "type": {
                     "name": "Food & Drink"
                 },
-                "image": "./paprcsirke2.png",
+                "image": "../assets/images/paprcsirke2.png",
                 "image2": "./paprcsirke.jpg",
                
                 "num": "0",
