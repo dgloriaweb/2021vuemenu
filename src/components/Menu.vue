@@ -30,7 +30,7 @@ export default {
   props: ["item"],
   computed: {
     posterImage: function () {
-      return `${this.item.image}`;
+      return `url(${this.item.image})`;
     },
     detailImage: function () {
       return `${this.item.image2}`;
