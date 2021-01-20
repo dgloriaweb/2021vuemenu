@@ -81,28 +81,29 @@ export default {
 }
 .detailContainer {
   display:grid;
-  min-height: 10rem;
+  min-height: 15rem;
 }
 .priceContainer {
   background: url("../assets/images/tag.png") no-repeat left;
   background-size: 40%;
   min-height: 5rem;
-  text-align: left;
-  font-size: 1rem;
+  text-align: left; 
   text-indent: 3.2rem;
 }
 .price {
-  padding-top: 1.8rem;
+  padding-top: 2rem;
   color:black;
   font-size:0.8rem;
+  font-weight:600;
 }
 .details {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 1rem;
   list-style-type: none;
   font-family: "Xanh Mono", sans-serif;
 
   font-weight: 800;
+  font-size: 1.2rem;
   color: black;
 }
 .name {
@@ -114,7 +115,7 @@ export default {
   cursor: pointer;
 }
 .productImage {
-  min-height: 10rem;
+  min-height: 15rem;
   max-width: 100%;
 }
 .closebutton{
@@ -122,7 +123,8 @@ export default {
   background:#288267;
 }
 .overlay{
-  background: rgb(161 218 201);
+   background-color:rgba(255,255,255,0.2);
+
 }
 
 
